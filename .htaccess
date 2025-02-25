@@ -1,0 +1,32 @@
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Interdire l'accès aux fichiers .env
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+# Personnalisation de la page d'erreur 404
+# ---------------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ---------------------------------------------------------------------
+# Désactivation de l'indexation des répertoires
+# ---------------------------------------------------------------------
+Options -Indexes
+
+# ---------------------------------------------------------------------
+# Activation de la gestion des symlinks (liens symboliques)
+# ---------------------------------------------------------------------
+Options +FollowSymlinks
+# Réécriture d'URL pour un index personnalisé (ex: rediriger index.html vers une autre page)
+# ---------------------------------------------------------------------
+RewriteRule ^eau\.php$ /page.php [L,R=301]
+
+#Nom d'utilisateur: luxzor
+#Mot de passe: eNk|mBehTpzk
+#URL du panneau de contrôle: tausi.afriregister.com:2083/
+
+

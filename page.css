@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    /* font-family: cursive,monospace,fantasy,sans-serif; */
+
+}
+
+body,html{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+    url("./images/adcov.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    background: green;
+    width: 100vw;
+}
+
+
+.btne{
+    padding: 0.8em;
+    display: inline-block;
+    background-color: green;
+    border: none;
+    border-radius: 50%;
+    transition: 650ms;
+    line-height: 0.1em;
+    font-size: 1.2em;
+    color: #eee;
+    margin-left: 80%;
+    border-bottom: 5px;
+    position: end;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+    label::before{
+        content: '+';
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    textarea,[type="radio"]{
+        display: none;
+    }
+.accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordion textarea,.accordion input[type="radio"]:checked+label+.content{
+    max-height: 100%;
+    padding: 10px 10px 20px;
+}
+.accordion textarea,.accordion input[type="radio"]:checked+label::before{
+    contain: '-';
+}
+/* ess */
+section{
+    width: 100%;
+    background-color: #fff;
+    margin: 10px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+
+}
+.row{
+    width: 100%;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+   background:#fefefe;
+    margin: 0;
+    margin-top: 9%;
+    border: 0.3em solid #f8f3f3;;
+    justify-content: center;
+    height: 78%;   
+    
+}
+.col .img{
+    width: 100%;
+    height: 100%;
+}
+.events .row{
+    margin-top: 10px;
+}
+.contenu{
+    width: 99%;
+    background-color: #fefefe;
+    height: 30%;
+}
+.row .contenu .h{
+    width: 100%;
+    line-height: 3em;
+    color: #000;
+    font-size: 1.8em;
+    font-family: fantasy,sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+}
+.row .contenu .p{
+    font-size: 1.5em;
+    font-family: fantasy,sans-serif;
+    padding: 0px 40px;
+     color: #000;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+.img img{
+    float: left;
+    width: 99%;
+     height:  98%;
+      border-radius: 16px ;
+}
+
+@media only screen and (max-width:1110px) {
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+@media only screen and (max-width:700px) {
+    *{
+        font-family: fantasy,sans-serif;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+#idd{display: none;}
+#da{
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#td{
+    /* background-color: #fff; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-content:justify ;
+    align-items: justify;
+    text-align: justify;
+    padding: 0.6em;
+}

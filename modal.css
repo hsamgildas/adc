@@ -1,0 +1,125 @@
+body{
+    background-color: #f2f2f2;
+}
+#wrapper{
+    position: fixed;
+    background-color: #fff;
+    height: auto;
+    width: 32%;
+    height: 50%;
+    border: 0.3em solid brown;
+    z-index: 12;  
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.left.right.top.bottom{
+    margin:0;
+    margin-left: 0%;
+}
+
+.hidden{
+    display: none;
+}
+.text,#header{
+    text-align: center;
+    color: #000;
+}
+.pargraphe{
+    margin: auto;
+    padding: auto;
+}
+
+#header{
+    display: flex;
+    background: brown;
+    justify-content: space-between;
+    cursor: move;
+    color: #fff;
+    /* border-bottom: 1px solid #ccc; */
+    
+}
+#content{
+    background-color: #fff;
+}
+#actions{
+    cursor: default;
+}
+#wrapper.w-full{
+    width: 99vw;
+    height: 85vh;
+    margin-left: 0%;
+    margin-top: 0%;
+    border: 0.3em solid brown;
+    border-radius: none;
+    overflow-x: hidden;
+}
+#wrapper.overflow-hidden{
+    width: 10vw;
+    height: 4vh;
+    /* margin-top:88vh; */
+}
+#wrapper.overflow-hidden .input-field{
+    display: none;
+}
+/* */
+/* media */
+
+@media only screen and (max-width: 1110px){
+    #wrapper.w-full{
+        width: 99vw;
+        height:auto;
+        max-height: 99vh;
+        margin-top: 0;
+        top: 0;
+        border: 0.3em solid brown;
+        border-radius: none;
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }	
+#wrapper{
+    width: 99vw;
+    height: auto;
+    max-height: 99vh;
+    top: 0;
+    position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+}
+
+
+-webkit-scrollbar {
+    width: 0.1em;
+    height: 0.1em;
+}
+#da{
+    color: #000;
+    overflow: hidden;
+        font-size: 1.3em;
+        text-align: left;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+        margin: 0.5em 0em 1em 0em;
+        
+        /* padding: 30px; */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-spacing: normal;
+}
+#td{
+        font-size: 1.3em;
+        text-align: left;
+        font-family:Times;
+        line-height: 1.5em;
+        margin: 0.5em 0em 1em 0em;
+        color:#000;
+        /* padding: 30px; */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-spacing: normal;
+}
+
+
+
